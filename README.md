@@ -1,2 +1,3 @@
-# rn
-Regina Novak Personal Portfolio
+# Regina Novak Abstract Artworks
+
+## In Development
