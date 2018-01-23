@@ -1,0 +1,14 @@
+[
+  {
+    "id": "art-01",
+    "name": "Example name 1",
+    "url": ["img/5428.jpg"],
+    "description": "Example Description 1"
+  },
+  {
+    "id": "art-02",
+    "name": "Example name 2",
+    "url": ["img/5428.jpg"],
+    "description": "Example Description 2"
+  }
+]
