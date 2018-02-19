@@ -490,11 +490,23 @@ ul {
   margin-left: .4rem;
 }
 @media (max-width: 700px) {
+  .section-paintings .item {
+    width: 49%;
+  }
+  .label {
+    line-height: 40px !important;
+    height: 40px !important;
+    width: 40px !important;
+    font-size: .75rem !important;
+  }
   img {
     width: 100%;
   }
 }
 @media (max-width: 480px) {
+  #global-page {
+    min-width: 470px;
+  }
   h2 {
     font-size: 2rem;
   }
