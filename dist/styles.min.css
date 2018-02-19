@@ -96,6 +96,9 @@ ul {
   max-width: 1400px;
   margin: 0 auto;
 }
+.overflow-visible {
+  overflow: visible !important;
+}
 .text-center {
   text-align: center;
 }
@@ -448,6 +451,7 @@ ul {
 #order-page .order-summary .text-info .with-frame {
   position: relative;
   padding-left: 26px;
+  padding-bottom: 10px;
 }
 #order-page .order-summary .text-info .with-frame .checkbox {
   width: 12px;
@@ -549,7 +553,7 @@ ul {
     margin-right: 45%;
   }
   #order-page .order-summary .order-item .price-field {
-    width: 40.5%;
+    width: 44.5%;
   }
 }
 @media (max-width: 480px) {
