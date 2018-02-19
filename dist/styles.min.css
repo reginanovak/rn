@@ -507,6 +507,9 @@ ul {
   #global-page {
     min-width: 470px;
   }
+  .section-paintings .item {
+    width: 100%;
+  }
   h2 {
     font-size: 2rem;
   }
