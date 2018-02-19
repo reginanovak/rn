@@ -464,12 +464,11 @@ ul {
   left: -2px;
   top: -3px;
 }
-#order-page .order-summary .text-info .with-frame.active .checkbox img,
-#order-page .order-summary .text-info .with-frame:hover img {
+#order-page .order-summary .text-info .with-frame.active .checkbox img {
   opacity: 1;
 }
 #order-page .order-summary.light-text {
-  color: #9b9b9b;
+  color: #818181;
 }
 #order-page .order-summary.light-text .total {
   color: #4e4e4e;
@@ -494,6 +493,10 @@ ul {
     width: 100%;
   }
   img {
+    width: 100%;
+  }
+  #order-page .slider-container,
+  #order-page .order-info {
     width: 100%;
   }
 }

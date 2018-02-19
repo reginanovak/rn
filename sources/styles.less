@@ -476,14 +476,14 @@ ul {
           top: -3px;
         }
       }
-      &.active .checkbox, &:hover {
+      &.active .checkbox {
         img {
           opacity: 1;
         }
       }
     }
     &.light-text {
-      color: lighten(@black-color, 30%);
+      color: lighten(@black-color, 20%);
       .total {
         color: @black-color;
       }
@@ -512,6 +512,11 @@ ul {
   }
   img {
     width: 100%;
+  }
+  #order-page {
+    .slider-container, .order-info {
+      width: 100%;
+    }
   }
 }
 @media (max-width:480px) {
