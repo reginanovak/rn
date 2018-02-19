@@ -504,9 +504,6 @@ ul {
   }
 }
 @media (max-width: 480px) {
-  #global-page {
-    min-width: 470px;
-  }
   .section-paintings .item {
     width: 100%;
   }
