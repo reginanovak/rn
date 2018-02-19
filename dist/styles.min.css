@@ -542,6 +542,15 @@ ul {
   #order-page .order-info {
     width: 100%;
   }
+  #order-page .order-summary .order-item {
+    font-size: .9rem;
+  }
+  #order-page .order-summary .order-item .text-info {
+    margin-right: 45%;
+  }
+  #order-page .order-summary .order-item .price-field {
+    width: 40.5%;
+  }
 }
 @media (max-width: 480px) {
   .section-paintings .item {
