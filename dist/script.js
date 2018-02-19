@@ -35,6 +35,7 @@ $(function() {
       continueButton.hide();
       orderSummary.hide();
       orderPayment.show();
+      dotsPager.show();
     });
 
     // ADDITIONAL
@@ -90,6 +91,17 @@ $(function() {
         console.log( "error" );
       })
     }
+
+    // DOTS
+    var dotsPager = $('#dots-pager');
+    var dotBack = $('#dot-back');
+    dotBack.on('click', function dotBack(){
+      orderSummary.show();
+      orderPayment.hide();
+      dotsPager.hide();
+      continueButton.show();
+    });
+
 
 
 

@@ -100,7 +100,7 @@
             <!-- </div> -->
             <div class="description">
               <p>
-                121x91cm (124x94cm framed in Raw Oak) acrylic on canvas, gloss varnish. Signed by artist.
+                121x91cm (124x94cm framed in Raw Oak) acrylic on canvas, gloss varnish.
               </p>
               <p>
                 Photographs made in natural light, tones may differ due to screen colors.
@@ -113,98 +113,108 @@
               Purchase
             </div>
 
-            <div id="order-summary" class="mt30 order-summary light-text" style="display: none">
-              <h2 class="black-color fs12rem fw400 text-transform-capitalize mb20">Order Summary</h2>
-              <div class="order-item">
-                <div class="price-field">
-                  $<span id="calc-price">550</span>.00 AUD
-                  <div class="additional mt10">
-                    <div class="with-frame" id="with-frame-active">
-                      $<span id="calc-frame">50</span>.00 AUD
-                    </div>
-                  </div>
-                </div>
-                <div class="text-info">
-                  <span>Blue Ocean: Original Painting</span>
-                  <div class="additional mt10">
-                    <div class="with-frame cursor-pointer">
-                      <div class="checkbox">
-                        <img src="img/check.svg">
+            <div class="order-wrapper">
+              <div id="order-summary" class="mt30 order-summary light-text" style="display: none">
+                <h2 class="black-color fs12rem fw400 text-transform-capitalize mb20">Order Summary</h2>
+                <div class="order-item">
+                  <div class="price-field">
+                    $<span id="calc-price">550</span>.00 AUD
+                    <div class="additional mt10">
+                      <div class="with-frame" id="with-frame-active">
+                        $<span id="calc-frame">50</span>.00 AUD
                       </div>
-                      With frame
+                    </div>
+                  </div>
+                  <div class="text-info">
+                    <span>Blue Ocean: Original Painting</span>
+                    <div class="additional mt10">
+                      <div class="with-frame cursor-pointer">
+                        <div class="checkbox">
+                          <img src="img/check.svg">
+                        </div>
+                        With frame
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="mt10 order-item">
+                  <div class="price-field">
+                    $<span id="calc-gst"></span>.00 AUD
+                  </div>
+                  <div class="text-info">
+                    GST
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div class="mt10 order-item">
+                  <div class="price-field">
+                    $<span id="calc-shipping">20</span>.00 AUD
+                  </div>
+                  <div class="text-info">
+                    Shipping
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div class="mt10 order-item total mb10">
+                  <div class="price-field">
+                    $<span id="calc-total"></span>.00 AUD
+                  </div>
+                  <div class="text-info">
+                    Total
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div class="mt20 mb30 order-item">
+                  <div class="text-info no-price-field">
+                    * Available payment in AUD, USD, EUR via PayPal
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <a class="btn border1px" id="continue-button">
+                  Continue
+                </a>
               </div>
-              <div class="mt10 order-item">
-                <div class="price-field">
-                  $<span id="calc-gst"></span>.00 AUD
-                </div>
-                <div class="text-info">
-                  GST
-                </div>
-                <div>
-                </div>
-              </div>
-              <div class="mt10 order-item">
-                <div class="price-field">
-                  $<span id="calc-shipping">20</span>.00 AUD
-                </div>
-                <div class="text-info">
-                  Shipping
-                </div>
-                <div>
-                </div>
-              </div>
-              <div class="mt10 order-item total mb10">
-                <div class="price-field">
-                  $<span id="calc-total"></span>.00 AUD
-                </div>
-                <div class="text-info">
-                  Total
-                </div>
-                <div>
-                </div>
-              </div>
-              <div class="mt20 mb30 order-item">
-                <div class="text-info no-price-field">
-                  * Available payment in AUD, USD, EUR via PayPal
-                </div>
-                <div>
-                </div>
-              </div>
-              <a class="btn border1px" id="continue-button">
-                Continue
-              </a>
-            </div>
 
 
-            <div id="order-payment" style="display: none" class="mt30 order-payment light-text">
-              <h2 class="black-color fs12rem fw400 text-transform-capitalize mb20">Payment</h2>
-              <div class="mb50">
-                <p>
-                  After redirecting to PayPal fill the form with email <span class="fw500">reginanovakart@gmail.com</span>. Press Next.
-                </p>
-                <p>
-                  Type price and set same currency for both fields. Please, add to notes your email and delivery address. I will email you shortly after payment been received.
-                </p>
-                <div>
-                  * Please, contact me by email on question of purchase. If you can not use PayPal, write to and we'll try to find other ways.
+              <div id="order-payment" style="display: none" class="mt30 order-payment light-text">
+                <h2 class="black-color fs12rem fw400 text-transform-capitalize mb20">Payment</h2>
+                <div class="mb50">
+                  <p>
+                    After redirecting to PayPal fill the form with email <span class="fw500">reginanovakart@gmail.com</span>. Press Next.
+                  </p>
+                  <p>
+                    Type price and set same currency for both fields. Please, add to notes your email and delivery address. I will email you shortly after payment been received.
+                  </p>
+                  <div>
+                    * Please, contact me by email on question of purchase. If you can not use PayPal, write to and we'll try to find other ways.
+                  </div>
+                  <p>
+                    Price:
+                    <span id="total-aud">10</span> AUD
+                    <span id="currencies-frame" style="display: none">
+                      |
+                      <span id="total-usd"></span> USD |
+                      <span id="total-eur"></span> EUR
+                    </span>
+                  </p>
                 </div>
-                <p>
-                  Price:
-                  <span id="total-aud">10</span> AUD
-                  <span id="currencies-frame" style="display: none">
-                    |
-                    <span id="total-usd"></span> USD |
-                    <span id="total-eur"></span> EUR
-                  </span>
-                </p>
+                <a class="btn border1px paypal-button" href="https://www.paypal.com/myaccount/transfer/send" target="_blank">
+                  Continue With
+                  <img src="img/paypal.svg" />
+                </a>
               </div>
-              <a class="btn border1px paypal-button" href="https://www.paypal.com/myaccount/transfer/send" target="_blank">
-                Continue With
-                <img src="img/paypal.svg" />
-              </a>
+              <div class="pager" id="dots-pager" style="display: none;">
+                <div class="dot" id="dot-back">
+                  <span></span>
+                </div>
+                <div class="dot active">
+                  <span></span>
+                </div>
+              </div>
             </div>
 
 
