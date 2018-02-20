@@ -245,6 +245,9 @@ ul {
   background-image: url(../img/header/main-1-.jpg);
   background-position: center -90px;
 }
+.section-visual.inner .visual-title {
+  padding: 10px 0;
+}
 .section-visual .visual-title {
   color: #fff;
   letter-spacing: .7rem;
@@ -547,19 +550,46 @@ ul {
   opacity: .8;
 }
 @media (max-width: 767px) {
-  .section-visual.main {
-    height: 120px;
+  .section-top .logo {
+    font-size: 1.6rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+    width: 100%;
   }
-  .section-visual.main .visual-title {
-    padding: 20px 0;
-    line-height: 1.8rem;
+  .section-content .insta-button {
+    width: 35px;
+    height: 35px;
   }
-  .section-visual.main .visual-title .header {
+  .section-visual {
+    height: 110px !important;
+  }
+  .section-visual .visual-title {
+    padding: 25px 0 20px !important;
+    line-height: 1.9rem;
+  }
+  .section-visual .visual-title .header {
     font-size: 1.8rem;
-    letter-spacing: 0.5;
+    letter-spacing: .4rem;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
   }
-  .section-visual.main .visual-title .sub {
+  .section-visual .visual-title .sub {
     display: none;
+  }
+  .section-visual.main {
+    /* background-image: none; */
+    /* background-color: #36b6e7; */
+    background-size: auto 140px;
+    background-position: center -28px;
+  }
+  .section-visual.inner {
+    background-image: url(../img/header/main-3-.jpg);
+    /* background-image: none; */
+    /* background-color: #36b6e7; */
+    background-size: auto 140px;
+    background-position: center -28px;
   }
   .section-paintings .item {
     width: 100%;

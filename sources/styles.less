@@ -250,6 +250,9 @@ ul {
     background-size: 1610px auto;
     background-image: url(../img/header/main-1-.jpg);
     background-position: center -90px;
+    .visual-title {
+      padding: 10px 0;
+    }
   }
 
   .visual-title {
@@ -565,18 +568,45 @@ ul {
 }
 
 @media (max-width:767px) {
-  .section-visual.main {
-    height: 120px;
+  .section-top .logo {
+    font-size: 1.6rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+    width: 100%;
+  }
+  .section-content .insta-button {
+    width: 35px;
+    height: 35px;
+  }
+  .section-visual {
+    height: 110px !important;
     .visual-title {
-      padding: 20px 0;
-      line-height: 1.8rem;
+      padding: 25px 0 20px !important;
+      line-height: 1.9rem;
       .header {
         font-size: 1.8rem;
-        letter-spacing: .5
+        letter-spacing: .4rem;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
       }
       .sub {
         display: none;
       }
+    }
+    &.main {
+      /* background-image: none; */
+      /* background-color: #36b6e7; */
+      background-size: auto 140px;
+      background-position: center -28px;
+    }
+    &.inner {
+      background-image: url(../img/header/main-3-.jpg);
+      /* background-image: none; */
+      /* background-color: #36b6e7; */
+      background-size: auto 140px;
+      background-position: center -28px;
     }
   }
   .section-paintings .item {
