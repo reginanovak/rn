@@ -4,6 +4,8 @@ body {
   padding: 0;
   margin: 0;
   color: #4e4e4e;
+  width: 100%;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -216,7 +218,8 @@ ul {
   text-transform: uppercase;
   font-weight: 100;
   color: #4e4e4e;
-  width: 320px;
+  width: 300px;
+  padding-right: 0;
 }
 .section-top .logo .surname {
   margin-left: .39rem;
@@ -234,6 +237,8 @@ ul {
   background-image: url(../img/header/main-3-.jpg);
   background-position: center -28px;
   background-size: 1610px auto;
+  height: 216px;
+  overflow: hidden;
 }
 .section-visual.inner {
   background-size: 1610px auto;
@@ -541,7 +546,21 @@ ul {
 .order-wrapper .pager .dot:not(.active):hover span {
   opacity: .8;
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
+  .section-visual.main {
+    height: 120px;
+  }
+  .section-visual.main .visual-title {
+    padding: 20px 0;
+    line-height: 1.8rem;
+  }
+  .section-visual.main .visual-title .header {
+    font-size: 1.8rem;
+    letter-spacing: 0.5;
+  }
+  .section-visual.main .visual-title .sub {
+    display: none;
+  }
   .section-paintings .item {
     width: 100%;
   }
@@ -560,14 +579,6 @@ ul {
   }
   #order-page .order-summary .order-item .price-field {
     width: 44.5%;
-  }
-}
-@media (max-width: 480px) {
-  .section-paintings .item {
-    width: 100%;
-  }
-  h2 {
-    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */
