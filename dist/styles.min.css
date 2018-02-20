@@ -288,6 +288,9 @@ ul {
   box-sizing: border-box;
   padding: 0 16px;
 }
+.section-paintings .item .collection-name {
+  display: block;
+}
 .section-paintings a.item {
   color: #4e4e4e;
   text-decoration: none;
