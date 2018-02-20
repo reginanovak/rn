@@ -234,11 +234,18 @@ ul {
 }
 .section-visual {
   background-color: @white-color;
-  background-image: url(../img/header/main-3.jpg);
-  background-attachment: fixed;
-  background-size: auto 1060px;
   background-repeat: no-repeat;
   background-position: center -375px;
+  &.main{
+    background-image: url(../img/header/main-3-.jpg);
+    background-position: center -28px;
+    background-size: 1610px auto;
+  }
+  &.inner {
+    background-size: 1610px auto;
+    background-image: url(../img/header/main-1-.jpg);
+    background-position: center -90px;
+  }
 
   .visual-title {
     color: @white-color;
@@ -255,10 +262,6 @@ ul {
       display: block;
       font-size: 1.2rem;
     }
-  }
-  &.inner {
-    background-image: url(../img/header/main-1.jpg);
-    background-position: center -565px;
   }
 }
 .section-connect{
