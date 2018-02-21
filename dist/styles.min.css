@@ -292,7 +292,7 @@ ul {
   fill: #fff;
 }
 .section-connect .connect-button-gray {
-  background-color: #d2d2d2;
+  background-color: #d9d9d9;
 }
 .section-paintings {
   padding-left: 1.2%;
@@ -575,7 +575,7 @@ ul {
     width: 30px;
     height: 30px;
     padding: 6px;
-    margin: 6px 6px 6px 0;
+    margin: 4px 4px 4px 0;
   }
   .section-visual {
     height: 110px !important;
@@ -595,17 +595,14 @@ ul {
     display: none;
   }
   .section-visual.main {
-    /* background-image: none; */
-    /* background-color: #36b6e7; */
-    background-size: auto 140px;
-    background-position: center -28px;
+    background-image: url(../img/header/mobile-02.jpg);
+    background-size: auto;
+    background-position: center;
   }
   .section-visual.inner {
-    background-image: url(../img/header/main-3-.jpg);
-    /* background-image: none; */
-    /* background-color: #36b6e7; */
-    background-size: auto 140px;
-    background-position: center -28px;
+    background-image: url(../img/header/mobile-01.jpg);
+    background-size: auto;
+    background-position: center;
   }
   .section-paintings .item {
     width: 100%;
@@ -630,7 +627,7 @@ ul {
     display: block;
     color: #c5c5c5;
     text-align: center;
-    margin: -20px 25px 18px;
+    margin: -25px 25px 18px;
     text-transform: uppercase;
     font-size: .9rem;
   }
