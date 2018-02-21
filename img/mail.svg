@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="34.16917"
+   height="34.1689"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="mail.svg">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4182">
+      <rect
+         style="fill:#550000;fill-opacity:1"
+         id="rect4184"
+         width="65.889832"
+         height="39.088982"
+         x="257.87308"
+         y="160.83446" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4211">
+      <rect
+         style="fill:#f9f6de;fill-opacity:1;stroke:none;stroke-width:2.98699999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+         id="rect4213"
+         width="47.351696"
+         height="24.152542"
+         x="265.76495"
+         y="160.78149"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3200"
+     inkscape:window-height="1745"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="18.88"
+     inkscape:cx="15.482099"
+     inkscape:cy="26.709459"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg_7"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g
+     id="g12"
+     style="fill:#666666"
+     transform="translate(-272.91542,-182.91556)">
+    <title
+       id="title14">Layer 1</title>
+    <g
+       stroke="null"
+       id="svg_7"
+       style="fill:#666666">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.987;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4188"
+         width="31.28322"
+         height="25.56288"
+         x="274.42844"
+         y="187.04169" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.31865668;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4188-7"
+         width="21.95138"
+         height="21.95138"
+         x="307.86194"
+         y="-102.3298"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,26)"
+         clip-path="url(#clipPath4211)" />
+    </g>
+  </g>
+</svg>

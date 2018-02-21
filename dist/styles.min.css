@@ -83,7 +83,7 @@ ul {
   list-style-type: none;
 }
 .pull-right {
-  float: right;
+  float: right !important;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -153,6 +153,9 @@ ul {
 .opacity-5 {
   opacity: .5;
 }
+.mr0 {
+  margin-right: 0px !important;
+}
 .p10 {
   padding: 10px !important;
 }
@@ -185,6 +188,9 @@ ul {
 }
 .mr22 {
   margin-right: 22px !important;
+}
+.ml22 {
+  margin-left: 22px !important;
 }
 .mt30 {
   margin-top: 30px !important;
@@ -267,7 +273,7 @@ ul {
 .section-connect {
   background-color: #ebebeb;
 }
-.section-connect .insta-button {
+.section-connect .connect-button {
   background-color: #489aff;
   width: 40px;
   height: 40px;
@@ -276,13 +282,17 @@ ul {
   box-sizing: border-box;
   padding: 7px;
   float: left;
+  margin: 10px 10px 10px 0;
 }
-.section-connect .insta-button img {
+.section-connect .connect-button img {
   width: 100%;
   height: 100%;
 }
-.section-connect .insta-button img path {
+.section-connect .connect-button img path {
   fill: #fff;
+}
+.section-connect .connect-button-gray {
+  background-color: #d2d2d2;
 }
 .section-paintings {
   padding-left: 1.2%;
@@ -549,17 +559,23 @@ ul {
 .order-wrapper .pager .dot:not(.active):hover span {
   opacity: .8;
 }
+.section-mobile-notification {
+  display: none;
+}
 @media (max-width: 767px) {
   .section-top .logo {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-left: 0 !important;
     padding-right: 0 !important;
     text-align: center;
     width: 100%;
+    padding: 10px 0 !important;
   }
-  .section-connect .insta-button {
-    width: 35px;
-    height: 35px;
+  .section-connect .connect-button {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin: 6px 6px 6px 0;
   }
   .section-visual {
     height: 110px !important;
@@ -609,6 +625,14 @@ ul {
   }
   #order-page .order-summary .order-item .price-field {
     width: 44.5%;
+  }
+  .section-mobile-notification {
+    display: block;
+    color: #c5c5c5;
+    text-align: center;
+    margin: -20px 25px 18px;
+    text-transform: uppercase;
+    font-size: .9rem;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */

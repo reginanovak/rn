@@ -86,7 +86,7 @@ ul {
   list-style-type: none;
 }
 .pull-right {
-  float: right;
+  float: right !important;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -157,6 +157,9 @@ ul {
   opacity: .5;
 }
 
+.mr0 {
+  margin-right: 0px !important;
+}
 .p10 {
   padding: 10px !important;
 }
@@ -189,6 +192,9 @@ ul {
 }
 .mr22 {
   margin-right: 22px !important;
+}
+.ml22 {
+  margin-left: 22px !important;
 }
 .mt30 {
   margin-top: 30px !important;
@@ -274,7 +280,7 @@ ul {
 }
 .section-connect{
   background-color: @gray-color;
-  .insta-button {
+  .connect-button {
     background-color: @button-color;
     width: 40px;
     height: 40px;
@@ -283,6 +289,7 @@ ul {
     box-sizing: border-box;
     padding: 7px;
     float: left;
+    margin: 10px 10px 10px 0;
     img {
       width: 100%;
       height: 100%;
@@ -290,6 +297,9 @@ ul {
         fill: @white-color;
       }
     }
+  }
+  .connect-button-gray {
+    background-color: darken(@gray-color, 10%);
   }
 }
 .section-paintings {
@@ -566,19 +576,24 @@ ul {
     }
   }
 }
+.section-mobile-notification {
+  display: none;
+}
 
 @media (max-width:767px) {
   .section-top .logo {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-left: 0 !important;
     padding-right: 0 !important;
     text-align: center;
     width: 100%;
+    padding: 10px 0 !important
   }
-  .section-connect .insta-button {
+  .section-connect .connect-button {
     width: 30px;
     height: 30px;
     padding: 6px;
+    margin: 6px 6px 6px 0;
   }
   .section-visual {
     height: 110px !important;
@@ -630,5 +645,13 @@ ul {
       width: 44.5%;
 
     }
+  }
+  .section-mobile-notification {
+    display: block;
+    color: darken(@gray-color, 15%);
+    text-align: center;
+    margin: -20px 25px 18px;
+    text-transform: uppercase;
+    font-size: .9rem;
   }
 }
