@@ -102,7 +102,15 @@ $(function() {
       continueButton.show();
     });
 
-
+    // MAIN SCROLL ON CLICK
+    var sectionVisualMain = $('#section-visual-main');
+    var sectionConnect = $('#section-connect');
+    var htmlAndBody = $('html, body');
+    sectionVisualMain.on('click', function scrollUnderSectionConnect(){
+      if (htmlAndBody.width() < 768){
+        htmlAndBody.animate({scrollTop: sectionConnect.offset().top+40}, 800);
+      }
+    });
 
 
   }
