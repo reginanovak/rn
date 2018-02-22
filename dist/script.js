@@ -112,6 +112,9 @@ $(function() {
       }
     });
 
+    // RETURN BACK MOBILE
+    var sectionPaintings = $('#section-paintings');
+
 
   }
 
