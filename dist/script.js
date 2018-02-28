@@ -41,17 +41,37 @@ $(function() {
     // ADDITIONAL
     var withFrameCheckbox = $('.text-info .with-frame', orderSummary);
     var withFramePrice = $('.price-field .with-frame', orderSummary);
+    var rollUpCheckbox = $('.text-info .roll-up', orderSummary);
+    var rollUpDiscount = $('.price-field .roll-up', orderSummary);
+    var calcPriceParent = $('#calc-price').parent();
+    var newPriceParent = $('#new-price').parent();
 
     withFrameCheckbox.on('click', function toggleWithFrame(){
       withFramePrice.toggleClass('active');
       withFrameCheckbox.toggleClass('active');
       calculateTotal();
     });
+    rollUpCheckbox.on('click', function toggleWithFrame(){
+      rollUpCheckbox.toggleClass('active');
+      rollUpDiscount.toggleClass('active');
+
+      withFramePrice.removeClass('active');
+      withFrameCheckbox.removeClass('active');
+      withFramePrice.toggleClass('disabled');
+      withFrameCheckbox.toggleClass('disabled');
+      calcPriceParent.toggleClass('strikethrough').toggleClass('opacity-5');
+      newPriceParent.toggle();
+
+      calculateTotal();
+    });
 
     // ORDER CALCULATION
     var calcPrice = $('#calc-price', orderSummary);
+    var newPrice = $('#new-price', orderSummary);
     var calcFrame = $('#calc-frame', orderSummary);
+    var calcRollUp = $('#calc-roll-up', orderSummary);
     var withFrameActive = $('#with-frame-active', orderSummary);
+    var rollUpActive = $('#roll-up-active', orderSummary);
     var calcGst = $('#calc-gst', orderSummary);
     var calcShipping = $('#calc-shipping', orderSummary);
     var calcTotal = $('#calc-total', orderSummary);
@@ -62,20 +82,33 @@ $(function() {
     var currenciesFrame = $('#currencies-frame', orderPayment);
 
     function calculateTotal(){
-      var gstRawPercentage = (8 / 100) * Number(calcPrice.text());
+      var paintingPrice = Number(calcPrice.text());
+
+      paintingPrice = rolledUp(paintingPrice);
+      var gstRawPercentage = (8 / 100) * paintingPrice;
       var gstNumber = Math.trunc(gstRawPercentage);
       calcGst.text(gstNumber);
-      var total = Number(calcPrice.text()) + frameCharged() + gstNumber + Number(calcShipping.text());
+      var total = paintingPrice + frameCharged() + gstNumber + Number(calcShipping.text());
       calcTotal.text(total);
       totalAudFrame.text(total);
       calculateCurrencies();
 
       function frameCharged(){
-        if (withFrameActive.hasClass('active')){
+        if (withFrameActive.hasClass('active') && !rollUpActive.hasClass('active')){
           return Number(calcFrame.text());
         } else {
           return 0;
         }
+      }
+      function rolledUp(pictureValue){
+        newPrice.text('-');
+        if (rollUpActive.hasClass('active')){
+          var pct = Number(calcRollUp.text())*.01;
+          newPaintingPrice = Math.trunc( Number(pictureValue) - pictureValue*pct );
+          newPrice.text(newPaintingPrice);
+          return newPaintingPrice;
+        }
+        return pictureValue;
       }
     }
     function calculateCurrencies(){

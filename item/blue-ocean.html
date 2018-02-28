@@ -108,7 +108,7 @@
           <div class="description">
             <p>
               121x91cm (124x94cm framed in Raw Oak) acrylic on canvas, gloss varnish.
-              Option to add the frame for the painting and check shipping cost through the checkout.
+              Option to add the frame for the painting or rolled up canvas, check shipping cost through the checkout.
             </p>
             <p>
               Photographs made in natural light, tones may differ due to screen colors.
@@ -126,21 +126,24 @@
               <h2 class="black-color fs12rem fw400 text-transform-capitalize mb20">Order Summary</h2>
               <div class="order-item">
                 <div class="price-field">
-                  $<span id="calc-price">570</span>.00 AUD
+                  <span>$<span id="calc-price">570</span>.00 AUD</span>
+                  <br/>
+                  <span style="display:none">$<span id="new-price"></span>.00 AUD</span>
                 </div>
                 <div class="text-info">
                   <span>Blue Ocean: Original Painting</span>
                 </div>
               </div>
+
               <div class="order-item overflow-visible">
                 <div class="price-field">
-                  <div class="with-frame" id="with-frame-active">
+                  <div class="checkbox-frame with-frame" id="with-frame-active">
                     $<span id="calc-frame">100</span>.00 AUD
                   </div>
                 </div>
                 <div class="text-info">
                   <div class="additional mt10">
-                    <div class="with-frame cursor-pointer">
+                    <div class="checkbox-frame with-frame cursor-pointer">
                       <div class="checkbox">
                         <img src="img/check.svg">
                       </div>
@@ -149,6 +152,25 @@
                   </div>
                 </div>
               </div>
+
+              <div class="order-item overflow-visible">
+                <div class="price-field">
+                  <div class="checkbox-frame roll-up" id="roll-up-active">
+                    -<span id="calc-roll-up">25</span>%
+                  </div>
+                </div>
+                <div class="text-info">
+                  <div class="additional">
+                    <div class="checkbox-frame roll-up cursor-pointer">
+                      <div class="checkbox">
+                        <img src="img/check.svg">
+                      </div>
+                      Roll Up Canvas
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="mt10 order-item">
                 <div class="price-field">
                   $<span id="calc-gst"></span>.00 AUD
