@@ -79,6 +79,20 @@ input[type=submit] {
 .btn.border1px {
   border: 1px solid;
 }
+.sold-out {
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  border: none;
+  color: #fff;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .07rem;
+  font-size: .9rem;
+  display: inline-block;
+  padding: 20px;
+  color: #4e4e4e;
+  transition: background-color 0.8s;
+}
 ul {
   list-style-type: none;
 }
