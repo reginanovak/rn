@@ -470,6 +470,10 @@ ul {
   text-align: left;
   overflow: hidden;
 }
+#order-page .order-summary .order-item.fixed-option {
+  opacity: .7;
+  pointer-events: none;
+}
 #order-page .order-summary .order-item img {
   width: 65px;
   float: left;
@@ -514,6 +518,9 @@ ul {
   position: absolute;
   left: -2px;
   top: -3px;
+}
+#order-page .order-summary .text-info .checkbox-frame .checkbox img.opacity35 {
+  opacity: .35 !important;
 }
 #order-page .order-summary .text-info .checkbox-frame.active .checkbox img {
   opacity: 1;

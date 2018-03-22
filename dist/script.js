@@ -85,10 +85,10 @@ $(function() {
       var paintingPrice = Number(calcPrice.text());
 
       paintingPrice = rolledUp(paintingPrice);
-      var gstRawPercentage = (8 / 100) * paintingPrice;
-      var gstNumber = Math.trunc(gstRawPercentage);
-      calcGst.text(gstNumber);
-      var total = paintingPrice + frameCharged() + gstNumber + Number(calcShipping.text());
+      // var gstRawPercentage = (8 / 100) * paintingPrice;
+      // var gstNumber = Math.trunc(gstRawPercentage);
+      // calcGst.text(gstNumber);
+      var total = paintingPrice + frameCharged() + Number(calcShipping.text());
       calcTotal.text(total);
       totalAudFrame.text(total);
       calculateCurrencies();

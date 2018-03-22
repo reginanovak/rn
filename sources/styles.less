@@ -480,6 +480,10 @@ ul {
     padding: 30px;
     background-color: @gray-color;
     .order-item {
+      &.fixed-option {
+        opacity: .7;
+        pointer-events: none;
+      }
       text-align: left;
       overflow: hidden;
       img {
@@ -525,6 +529,9 @@ ul {
           position: absolute;
           left: -2px;
           top: -3px;
+          &.opacity35 {
+            opacity: .35 !important;
+          }
         }
       }
       &.active .checkbox {
