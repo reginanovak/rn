@@ -358,7 +358,7 @@ ul {
   text-align: center;
 }
 .label-container .label.sale {
-  background-color: rgba(1, 229, 213, 0.9);
+  background-color: rgba(48, 198, 233, 0.9);
   letter-spacing: .04rem;
   line-height: 65px;
 }
@@ -642,6 +642,11 @@ ul {
   }
   .section-paintings .item {
     width: 49%;
+  }
+  .section-paintings .item .text-0,
+  .section-paintings .item .price {
+    font-size: .8rem;
+    line-height: 1.2rem;
   }
   img {
     width: 100%;
