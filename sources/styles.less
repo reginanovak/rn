@@ -2,7 +2,7 @@
 @secondary-color: #557a95;
 @background-color: #fff;
 @white-color: #fff;
-@gray-color: #ebebeb;
+@gray-color: #f1f1f1;
 @black-color: #4e4e4e;
 @sold-color: rgba(60, 141, 246, .9);
 @sale-color: rgba(48, 198, 233, .9);
@@ -11,6 +11,11 @@
 @price-color: #909090;
 
 // IMAGE: 4x3 ratio
+
+#global-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -269,9 +274,9 @@ ul {
   background-position: center -375px;
   &.main{
     background-image: url(../img/header/main-3-.jpg);
-    background-position: center -28px;
-    background-size: 1610px auto;
-    height: 216px;
+    background-position: center -59px;
+    background-size: 100% auto;
+    height: 215px;
     overflow: hidden;
   }
   &.inner {
@@ -287,6 +292,7 @@ ul {
     color: @white-color;
     letter-spacing: .7rem;
     padding: 62px 0;
+    display: none !important;
     .header {
       font-size: 2.7rem;
     }

@@ -1,3 +1,7 @@
+#global-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
@@ -41,7 +45,7 @@ textarea {
 input[type=text].border,
 input[type=email].border,
 textarea.border {
-  box-shadow: 1px 1px 1px #ebebeb;
+  box-shadow: 1px 1px 1px #f1f1f1;
 }
 input[type=submit] {
   cursor: pointer;
@@ -62,7 +66,7 @@ input[type=submit] {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   border: none;
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
   color: #fff;
   line-height: 1rem;
   text-transform: uppercase;
@@ -74,7 +78,7 @@ input[type=submit] {
   transition: background-color 0.8s;
 }
 .btn:hover {
-  background-color: #d2d2d2;
+  background-color: #d8d8d8;
 }
 .btn.border1px {
   border: 1px solid;
@@ -262,9 +266,9 @@ ul {
 }
 .section-visual.main {
   background-image: url(../img/header/main-3-.jpg);
-  background-position: center -28px;
-  background-size: 1610px auto;
-  height: 216px;
+  background-position: center -59px;
+  background-size: 100% auto;
+  height: 215px;
   overflow: hidden;
 }
 .section-visual.inner {
@@ -279,6 +283,7 @@ ul {
   color: #fff;
   letter-spacing: .7rem;
   padding: 62px 0;
+  display: none !important;
 }
 .section-visual .visual-title .header {
   font-size: 2.7rem;
@@ -292,7 +297,7 @@ ul {
   font-size: 1.2rem;
 }
 .section-connect {
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
 }
 .section-connect .connect-button {
   background-color: #489aff;
@@ -313,7 +318,7 @@ ul {
   fill: #fff;
 }
 .section-connect .connect-button-gray {
-  background-color: #d9d9d9;
+  background-color: #dfdfdf;
 }
 .section-paintings {
   padding-left: 1.2%;
@@ -459,10 +464,10 @@ ul {
 #order-page .order-info .order-form textarea {
   display: block;
   margin-bottom: 10px;
-  box-shadow: inset 1px 0px 3px #ebebeb;
+  box-shadow: inset 1px 0px 3px #f1f1f1;
 }
 #order-page .order-info .order-form .form-block {
-  border: 1px solid #ebebeb;
+  border: 1px solid #f1f1f1;
   padding: 40px;
   margin: 0 auto;
   width: 100%;
@@ -472,7 +477,7 @@ ul {
 }
 #order-page .order-summary {
   padding: 30px;
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
 }
 #order-page .order-summary .order-item {
   text-align: left;
@@ -542,7 +547,7 @@ ul {
 #order-page .order-payment {
   position: relative;
   padding: 30px;
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
 }
 #order-page .order-payment .paypal-button {
   line-height: 2rem;
@@ -666,7 +671,7 @@ ul {
   }
   .section-mobile-notification {
     display: block;
-    color: #c5c5c5;
+    color: #cbcbcb;
     text-align: center;
     margin: -25px 25px 18px;
     text-transform: uppercase;
