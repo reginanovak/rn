@@ -2,10 +2,6 @@
   max-width: 960px;
   margin: 0 auto;
 }
-#order-page,
-#global-page {
-  display: none;
-}
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
@@ -269,16 +265,17 @@ ul {
   background-position: center -375px;
 }
 .section-visual.main {
-  background-image: url(../img/header/main-3-.jpg);
-  background-position: center -59px;
+  background-image: url(../img/header/main-desktop.jpg);
+  background-position: center -70px;
   background-size: 100% auto;
-  height: 215px;
+  height: 150px;
   overflow: hidden;
 }
 .section-visual.inner {
   background-size: 1610px auto;
-  background-image: url(../img/header/main-1-.jpg);
+  /* background-image: url(../img/header/main-1-.jpg); */
   background-position: center -90px;
+  display: none;
 }
 .section-visual.inner .visual-title {
   padding: 10px 0;
@@ -623,7 +620,7 @@ ul {
     margin: 4px 4px 4px 0;
   }
   .section-visual {
-    height: 110px !important;
+    height: 90px !important;
   }
   .section-visual .visual-title {
     padding: 25px 0 20px !important;
@@ -640,14 +637,15 @@ ul {
     display: none;
   }
   .section-visual.main {
-    background-image: url(../img/header/mobile-02.jpg);
-    background-size: auto;
+    background-image: url(../img/header/main-mobile.jpg);
+    background-size: 100% auto;
     background-position: center;
   }
   .section-visual.inner {
-    background-image: url(../img/header/mobile-01.jpg);
+    /* background-image: url(../img/header/mobile-01.jpg); */
     background-size: auto;
     background-position: center;
+    display: none;
   }
   .section-paintings .item {
     width: 49%;
