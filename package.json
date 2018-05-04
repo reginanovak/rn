@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "author": "Kir Novak",
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "less": "lessc sources/styles.less dist/styles.min.css --source-map",
     "watch": "watch -n 1 npm run less"
