@@ -652,8 +652,8 @@ ul {
   }
   .section-paintings .item .text-0,
   .section-paintings .item .price {
-    font-size: .67rem;
-    line-height: 1rem;
+    font-size: .65rem;
+    line-height: .9rem;
   }
   img {
     width: 100%;
