@@ -212,16 +212,8 @@ ul {
 .ml20 {
   margin-left: 20px !important;
 }
-.ml22 {
-  // TODO: RENAME CLASS-NAME TO .left-edge-padding
-  margin-left: 22px !important;
-}
 .mr20 {
   margin-right: 20px !important;
-}
-.mr22 {
-  // TODO: RENAME CLASS-NAME TO .right-edge-padding
-  margin-right: 22px !important;
 }
 .mt30 {
   margin-top: 30px !important;
@@ -246,6 +238,13 @@ ul {
 }
 .mb60 {
   margin-bottom: 60px !important;
+}
+
+.left-edge-padding {
+  margin-left: 25px !important;
+}
+.right-edge-padding {
+  margin-right: 25px !important;
 }
 
 .section-top {
@@ -333,9 +332,9 @@ ul {
   }
 }
 .section-paintings {
-  padding-left: 1.2%;
+  padding-left: 1.6%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 -31px;
   .item {
     width: 32.5%;
     text-align: center;
@@ -641,7 +640,7 @@ ul {
     margin: 4px 4px 4px 0;
   }
   .section-visual {
-    height: 90px !important;
+    height: 55px !important;
     .visual-title {
       padding: 25px 0 20px !important;
       line-height: 1.9rem;
@@ -668,12 +667,16 @@ ul {
       display: none;
     }
   }
-  .section-paintings .item {
-    width: 49%;
-    padding: 0 10px;
-    .text-0, .price {
-      font-size: .65rem;
-      line-height: .9rem;
+  .section-paintings {
+    margin: 0 auto;
+    padding-left: 6px;
+    .item {
+      width: 49%;
+      padding: 0 10px;
+      .text-0, .price {
+        font-size: .65rem;
+        line-height: .9rem;
+      }
     }
   }
   img {
@@ -709,10 +712,10 @@ ul {
     font-size: .8rem !important;
   }
 
-  .ml22 {
+  .left-edge-padding {
     margin-left: 16px !important;
   }
-  .mr22 {
+  .right-edge-padding {
     margin-right: 16px !important;
   }
 }
@@ -721,10 +724,10 @@ ul {
   .section-paintings .item {
     padding: 0 8px;
   }
-  .ml22 {
+  .left-edge-padding {
     margin-left: 11px !important;
   }
-  .mr22 {
+  .right-edge-padding {
     margin-right: 11px !important;
   }
 
@@ -732,10 +735,10 @@ ul {
     &.main {
       background-size: auto 75px;
     }
-    height: 75px !important;
+    height: 55px !important;
   }
 }
-@media (max-width:270px) {
+@media (max-width:280px) {
   .section-paintings .item {
     width: 100%;
   }
