@@ -214,9 +214,6 @@ ul {
 .mr22 {
   margin-right: 22px !important;
 }
-.ml22 {
-  margin-left: 22px !important;
-}
 .mt30 {
   margin-top: 30px !important;
 }
@@ -649,6 +646,7 @@ ul {
   }
   .section-paintings .item {
     width: 49%;
+    padding: 0 10px;
   }
   .section-paintings .item .text-0,
   .section-paintings .item .price {
@@ -684,6 +682,34 @@ ul {
     height: 45px !important;
     line-height: 45px !important;
     font-size: .8rem !important;
+  }
+  .ml22 {
+    margin-left: 16px !important;
+  }
+  .mr22 {
+    margin-right: 16px !important;
+  }
+}
+@media (max-width: 400px) {
+  .section-paintings .item {
+    padding: 0 8px;
+  }
+  .ml22 {
+    margin-left: 11px !important;
+  }
+  .mr22 {
+    margin-right: 11px !important;
+  }
+  .section-visual {
+    height: 75px !important;
+  }
+  .section-visual.main {
+    background-size: auto 75px;
+  }
+}
+@media (max-width: 270px) {
+  .section-paintings .item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */
