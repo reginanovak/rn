@@ -256,6 +256,9 @@ ul {
   color: #36b6e7;
   letter-spacing: .2rem;
 }
+.section-visual-mobile {
+  display: none;
+}
 .section-visual {
   background-color: #fff;
   background-repeat: no-repeat;
@@ -321,7 +324,7 @@ ul {
 .section-paintings {
   padding-left: 1.6%;
   max-width: 1100px;
-  margin: 0 -31px;
+  margin: 0 -5px;
 }
 .section-paintings .item {
   width: 32.5%;
@@ -616,34 +619,40 @@ ul {
     padding: 6px;
     margin: 4px 4px 4px 0;
   }
-  .section-visual {
-    height: 55px !important;
-  }
-  .section-visual .visual-title {
-    padding: 25px 0 20px !important;
-    line-height: 1.9rem;
-  }
-  .section-visual .visual-title .header {
-    font-size: 1.8rem;
-    letter-spacing: .4rem;
-    width: 250px;
+  .section-visual-mobile {
     display: block;
-    margin: 0 auto;
   }
-  .section-visual .visual-title .sub {
+  .section-visual {
     display: none;
   }
-  .section-visual.main {
-    background-image: url(../img/header/main-mobile.jpg);
-    background-size: 100% auto;
-    background-position: center;
+  /*
+  .section-visual {
+    .visual-title {
+      padding: 25px 0 20px !important;
+      line-height: 1.9rem;
+      .header {
+        font-size: 1.8rem;
+        letter-spacing: .4rem;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+      }
+      .sub {
+        display: none;
+      }
+    }
+    &.main {
+      background-image: url(../img/header/main-mobile.jpg);
+      background-size: 100% auto;
+      background-position: center;
+    }
+    &.inner {
+      background-size: auto;
+      background-position: center;
+      display: none;
+    }
   }
-  .section-visual.inner {
-    /* background-image: url(../img/header/mobile-01.jpg); */
-    background-size: auto;
-    background-position: center;
-    display: none;
-  }
+  */
   .section-paintings {
     margin: 0 auto;
     padding-left: 6px;
