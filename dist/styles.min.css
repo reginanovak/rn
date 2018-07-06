@@ -377,7 +377,8 @@ ul {
   text-align: center;
 }
 .label-container .label.sale {
-  background-color: rgba(235, 95, 138, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #4e4e4e;
   letter-spacing: .04rem;
   line-height: 65px;
 }
