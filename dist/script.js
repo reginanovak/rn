@@ -36,6 +36,7 @@ $(function() {
       orderSummary.hide();
       orderPayment.show();
       dotsPager.show();
+      updatePayPalLink();
     });
 
     // ADDITIONAL
@@ -110,6 +111,11 @@ $(function() {
         }
         return pictureValue;
       }
+    }
+    function updatePayPalLink(){
+      var ppButton = $('.paypal-button');
+      var url = ppButton.attr('href');
+      ppButton.attr('href', url+'/'+totalAudFrame.text()+'aud');
     }
     function calculateCurrencies(){
       var reqString = 'https://api.fixer.io/latest?base=AUD&symbols=USD,EUR';

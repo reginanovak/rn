@@ -119,6 +119,19 @@ ul {
 .strikethrough {
   text-decoration: line-through;
 }
+.strikethrough-line {
+  position: relative;
+  white-space: nowrap;
+}
+.strikethrough-line:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b9b9b9;
+  left: 0;
+  top: 0.55em;
+}
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -364,7 +377,7 @@ ul {
   text-align: center;
 }
 .label-container .label.sale {
-  background-color: rgba(48, 198, 233, 0.9);
+  background-color: rgba(235, 95, 138, 0.9);
   letter-spacing: .04rem;
   line-height: 65px;
 }
