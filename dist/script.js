@@ -115,8 +115,9 @@ $(function() {
     function updatePayPalLink(){
       var ppButton = $('.paypal-button');
       var url = ppButton.attr('href');
-      ppButton.attr('paypalready', true);
+      console.log(ppButton, 'ppButton');
       if (!ppButton.attr('paypalready')){
+        ppButton.attr('paypalready', true);
         ppButton.attr('href', url+'/'+totalAudFrame.text()+'aud');
       }
     }
