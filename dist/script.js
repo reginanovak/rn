@@ -115,8 +115,12 @@ $(function() {
     function updatePayPalLink(){
       var ppButton = $('.paypal-button');
       var url = ppButton.attr('href');
-      ppButton.attr('href', url+'/'+totalAudFrame.text()+'aud');
+      ppButton.attr('paypalready', true);
+      if (!ppButton.attr('paypalready')){
+        ppButton.attr('href', url+'/'+totalAudFrame.text()+'aud');
+      }
     }
+
     function calculateCurrencies(){
       var reqString = 'https://api.fixer.io/latest?base=AUD&symbols=USD,EUR';
       $.getJSON(reqString, function( data ) {
