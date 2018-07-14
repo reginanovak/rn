@@ -155,11 +155,12 @@ ul {
   text-transform: uppercase;
   letter-spacing: .24rem;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 400;
 }
 .text-2 .sub {
   display: block;
   font-size: 1.1rem;
+  font-weight: 300;
 }
 .linethrough {
   text-decoration: line-through;
@@ -431,7 +432,7 @@ ul {
 }
 #order-page .slider-container {
   vertical-align: top;
-  width: 50%;
+  width: 60%;
   margin-right: 2%;
   display: inline-block;
 }
@@ -472,7 +473,7 @@ ul {
   position: relative;
   vertical-align: top;
   display: inline-block;
-  width: 46%;
+  width: 36%;
   text-align: center;
 }
 #order-page .order-info .order-form input,
