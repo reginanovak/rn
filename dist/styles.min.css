@@ -1,6 +1,6 @@
 #global-page {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 7% auto;
 }
 body {
   font-family: 'Work Sans', sans-serif;
@@ -144,7 +144,7 @@ ul {
   text-align: center;
 }
 .text-0 {
-  font-size: .9rem;
+  font-size: .98rem;
   text-transform: uppercase;
 }
 .text-1 {
@@ -341,6 +341,11 @@ ul {
   max-width: 1100px;
   margin: 0 -5px;
 }
+.section-paintings.section-paintings-style-1 {
+  background: #fbfbfb;
+  max-width: 960px;
+  padding-top: 30px;
+}
 .section-paintings .item {
   width: 80%;
   text-align: center;
@@ -351,9 +356,6 @@ ul {
   box-sizing: border-box;
   padding: 0 16px;
   line-height: 1.3em;
-}
-.section-paintings .item .collection-name {
-  display: block;
 }
 .section-paintings a.item {
   color: #4e4e4e;
@@ -384,6 +386,7 @@ ul {
   color: #4e4e4e;
   letter-spacing: .04rem;
   line-height: 84px;
+  font-weight: 400;
 }
 .label-container .label.sale:after {
   content: 'SALE';
@@ -392,6 +395,7 @@ ul {
   background-color: rgba(60, 141, 246, 0.9);
   letter-spacing: .04rem;
   line-height: 84px;
+  font-weight: 400;
 }
 .label-container .label.sold:after {
   content: 'SOLD';
@@ -719,6 +723,24 @@ ul {
   }
   .right-edge-padding {
     margin-right: 16px !important;
+  }
+  .label-container .label {
+    width: 55px;
+    height: 55px;
+  }
+  .label-container .label.sale {
+    line-height: 54px;
+  }
+  .label-container .label.sale:after {
+    content: 'SALE';
+    font-size: .8rem;
+  }
+  .label-container .label.sold {
+    line-height: 54px;
+  }
+  .label-container .label.sold:after {
+    content: 'SOLD';
+    font-size: .8rem;
   }
 }
 @media (max-width: 400px) {
