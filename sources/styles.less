@@ -354,14 +354,17 @@ ul {
   max-width: 1100px;
   margin: 0 -5px;
   .item {
-    width: 32.5%;
+    // width: 32.5%;
+    width: 80%;
     text-align: center;
-    display: inline-block;
-    margin-bottom: 30px;
+    // display: inline-block;
+    display: block;
+    margin: 0 auto 40px;
     vertical-align: top;
     cursor: pointer;
     box-sizing: border-box;
     padding: 0 16px;
+    line-height: 1.3em;
     .collection-name {
       display: block;
     }
@@ -382,18 +385,18 @@ ul {
   margin: 0 auto 10px;
   .label {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     color: @white-color;
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     box-sizing: border-box;
     text-align: center;
     &.sale {
       background-color: @sale-color;
       color: @black-color;
       letter-spacing: .04rem;
-      line-height: 65px;
+      line-height: 84px;
       &:after {
         content: 'SALE';
       }
@@ -401,7 +404,7 @@ ul {
     &.sold {
       background-color: @sold-color;
       letter-spacing: .04rem;
-      line-height: 65px;
+      line-height: 84px;
       &:after {
         content: 'SOLD';
       }
@@ -696,7 +699,7 @@ ul {
     margin: 0 auto;
     padding-left: 6px;
     .item {
-      width: 49%;
+      //- width: 49%;
       padding: 0 10px;
       .text-0, .price {
         font-size: .65rem;
@@ -730,12 +733,14 @@ ul {
     text-transform: uppercase;
     font-size: .7rem;
   }
+  /*
   .label-container .label {
-    width: 45px !important;
-    height: 45px !important;
+    width: 65px !important;
+    height: 65px !important;
     line-height: 45px !important;
     font-size: .8rem !important;
   }
+  */
 
   .left-edge-padding {
     margin-left: 16px !important;
