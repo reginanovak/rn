@@ -1,6 +1,6 @@
 #global-page {
   max-width: 960px;
-  margin: 0 7% auto;
+  margin: 0 auto;
 }
 body {
   font-family: 'Work Sans', sans-serif;
@@ -345,16 +345,17 @@ ul {
   background: #fbfbfb;
   max-width: 960px;
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 .section-paintings .item {
-  width: 80%;
+  width: 49%;
   text-align: center;
-  display: block;
+  display: inline-block;
   margin: 0 auto 40px;
   vertical-align: top;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 0 16px;
+  padding: 0 25px;
   line-height: 1.3em;
 }
 .section-paintings a.item {
