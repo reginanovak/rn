@@ -342,16 +342,15 @@ ul {
   margin: 0 -5px;
 }
 .section-paintings.section-paintings-style-1 {
-  background: #fbfbfb;
   max-width: 960px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 .section-paintings .item {
-  width: 49%;
+  width: 90%;
   text-align: center;
   display: inline-block;
-  margin: 0 auto 40px;
+  margin: 0 auto 40px -3px;
   vertical-align: top;
   cursor: pointer;
   box-sizing: border-box;
@@ -446,6 +445,9 @@ ul {
 #order-page .slider-container .painting img {
   width: 100%;
 }
+#order-page .slider-container .slider-item {
+  display: none;
+}
 #order-page .slider-container .slider-item img {
   width: 100%;
 }
@@ -456,8 +458,8 @@ ul {
 #order-page .slider-container .slider-preview li {
   position: relative;
   cursor: pointer;
-  width: 16.6666%;
-  display: inline-block;
+  width: 100%;
+  display: block;
   box-sizing: border-box;
   border: 6px solid #fff;
   margin-bottom: -4px;

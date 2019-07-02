@@ -6,6 +6,7 @@ $(function() {
   if (orderPage.length){
 
     //SLIDER
+    /*
     var labelContainerImage = $('.slider-item .label-container img', orderPage);
     var sliderPreviewItem = $('.slider-preview li', orderPage);
 
@@ -18,6 +19,7 @@ $(function() {
       labelContainerImage.attr('src', imageSrc);
       el.addClass('active');
     });
+    */
 
 
     // PURCHASE

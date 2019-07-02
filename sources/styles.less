@@ -354,18 +354,20 @@ ul {
   max-width: 1100px;
   margin: 0 -5px;
   &.section-paintings-style-1 {
-    background: #fbfbfb;
+    // background: #fbfbfb;
     max-width: 960px;
     padding-top: 30px;
     padding-bottom: 10px;
   }
   .item {
     // width: 32.5%;
-    width: 49%;
+    // width: 49%;
+    width: 90%;
     text-align: center;
     // display: inline-block;
     display: inline-block;
-    margin: 0 auto 40px;
+    // margin: 0 auto 40px;
+    margin: 0 auto 40px -3px;
     vertical-align: top;
     cursor: pointer;
     box-sizing: border-box;
@@ -465,6 +467,9 @@ ul {
     .painting img {
       width: 100%;
     }
+    .slider-item {
+      display: none;
+    }
     .slider-item img {
       width: 100%;
     }
@@ -474,8 +479,8 @@ ul {
       li {
         position: relative;
         cursor: pointer;
-        width: 16.6666%;
-        display: inline-block;
+        width: 100%;
+        display: block;
         box-sizing: border-box;
         border: 6px solid #fff;
         margin-bottom: -4px;
