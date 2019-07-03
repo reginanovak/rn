@@ -1,5 +1,32 @@
 $(function() {
 
+  // LINKS IN THE BOTTOM
+  var instagramLink = 'https://www.instagram.com/reginanovak.art';
+  var mailLink = 'mailto:reginanovakart@gmail.com?subject=Mail+ReginaNovakArt';
+  $('body').append('<div class="fixed-buttons"><a href="'+instagramLink+'" target="blank">instagram</a><a href="'+mailLink+'"">email</a></div>');
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    var fixedButtons = $('.fixed-buttons');
+    if (scroll < 10) {
+      fixedButtons.show();
+    } else {
+      fixedButtons.hide();
+    }
+  })
+
+  // MAIN PAGE HEADER SIZE
+  /*
+  function setHeaderHeight(){
+    var viewportHeight = $(window).height();
+    var headerHeight = viewportHeight / 5;
+    console.log(viewportHeight, 'viewportHeight');
+    $('.section-visual.main').css('height', headerHeight+'px');
+    // $('.section-visual .visual-title').css('padding', headerHeight/);
+  }
+
+  setHeaderHeight();
+  */
+
   //
   //
   var orderPage = $('#order-page');

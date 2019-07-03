@@ -282,19 +282,17 @@ ul {
     }
   }
 }
-.section-visual-mobile {
-  display: none;
-}
 .section-visual {
   background-color: @white-color;
   background-repeat: no-repeat;
   background-position: center -375px;
   &.main{
     background-image: url(../img/header/main-desktop.jpg);
-    background-position: center center;
+    background-position: center -267px;
     background-size: 960px auto;
-    height: 150px;
+    height: 210px;
     overflow: hidden;
+    position: relative;
   }
   &.inner {
     background-size: 1610px auto;
@@ -302,6 +300,7 @@ ul {
     background-position: center -90px;
     display: none;
     .visual-title {
+      display: none !important;
       padding: 10px 0;
     }
   }
@@ -309,13 +308,13 @@ ul {
   .visual-title {
     color: @white-color;
     letter-spacing: .7rem;
-    padding: 62px 0;
-    display: none !important;
+    padding: 75px 0;
     .header {
       font-size: 2.7rem;
     }
     .sub {
-      display: block;
+      // display: block;
+      display: none;
       font-size: 1.2rem;
     }
     .sub-confirmation {
@@ -659,6 +658,26 @@ ul {
   display: none;
 }
 
+.fixed-buttons {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  background: #efefef;
+  left: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  a {
+    float: left;
+    height: 45px;
+    width: 50%;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: #4e4e4e;
+  }
+}
+
 @media (max-width:767px) {
   .section-top .logo {
     font-size: 1.3rem;
@@ -666,7 +685,7 @@ ul {
     padding-right: 0 !important;
     text-align: center;
     width: 100%;
-    padding: 10px 0 !important
+    padding: 15px 0 !important
   }
   .section-connect .connect-button {
     width: 30px;
@@ -674,40 +693,13 @@ ul {
     padding: 6px;
     margin: 4px 4px 4px 0;
   }
-  .section-visual-mobile {
-    display: block;
-  }
-  .section-visual {
-    display: none;
-  }
-  /*
   .section-visual {
     .visual-title {
-      padding: 25px 0 20px !important;
-      line-height: 1.9rem;
       .header {
-        font-size: 1.8rem;
-        letter-spacing: .4rem;
-        width: 250px;
-        display: block;
-        margin: 0 auto;
+        font-size: 1.3rem;
       }
-      .sub {
-        display: none;
-      }
-    }
-    &.main {
-      background-image: url(../img/header/main-mobile.jpg);
-      background-size: 100% auto;
-      background-position: center;
-    }
-    &.inner {
-      background-size: auto;
-      background-position: center;
-      display: none;
     }
   }
-  */
   .section-paintings {
     margin: 0 auto;
     padding-left: 6px;
@@ -786,6 +778,7 @@ ul {
 }
 
 @media (max-width:400px) {
+
   .section-paintings .item {
     padding: 0 8px;
   }
@@ -797,10 +790,12 @@ ul {
   }
 
   .section-visual {
+    /*
     &.main {
       background-size: auto 75px;
     }
     height: 55px !important;
+    */
   }
 }
 @media (max-width:280px) {
