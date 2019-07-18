@@ -659,7 +659,11 @@ ul {
     padding-left: 6px;
   }
   .section-paintings .item {
+    margin-bottom: 40px !important;
     padding: 0 10px;
+  }
+  .section-paintings .item .painting {
+    margin-bottom: 21px !important;
   }
   .section-paintings .item .text-0,
   .section-paintings .item .price {
@@ -700,14 +704,14 @@ ul {
     height: 55px;
   }
   .label-container .label.sale {
-    line-height: 54px;
+    line-height: 53px;
   }
   .label-container .label.sale:after {
     content: 'SALE';
     font-size: .8rem;
   }
   .label-container .label.sold {
-    line-height: 54px;
+    line-height: 53px;
   }
   .label-container .label.sold:after {
     content: 'SOLD';
