@@ -218,7 +218,8 @@ $(function() {
       console.log(ppButton, 'ppButton');
       if (!ppButton.attr('paypalready')){
         ppButton.attr('paypalready', true);
-        ppButton.attr('href', url+'/'+totalAudFrame.text()+'aud');
+        // ppButton.attr('href', url+'/'+totalAudFrame.text()+'eur');
+        ppButton.attr('href', url+'/'+totalAudFrame.text());
       }
     }
 
