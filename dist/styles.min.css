@@ -702,16 +702,11 @@ ul {
   .label-container .label {
     width: 55px;
     height: 55px;
-  }
-  .label-container .label.sale {
-    line-height: 53px;
+    line-height: 52px;
   }
   .label-container .label.sale:after {
     content: 'SALE';
     font-size: .8rem;
-  }
-  .label-container .label.sold {
-    line-height: 53px;
   }
   .label-container .label.sold:after {
     content: 'SOLD';
