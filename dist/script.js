@@ -1,6 +1,14 @@
 $(function() {
 
+  var visualMain = $('.section-visual.main');
+  var sectionTop = $('.section-top');
+  var sectionPaintings = $('.section-paintings');
+  var globalPage = $('#global-page');
+
+
+  //
   // LINKS IN THE BOTTOM
+  //
   var instagramLink = 'https://www.instagram.com/reginanovak.art';
   var mailLink = 'mailto:reginanovakart@gmail.com?subject=Mail+ReginaNovakArt';
   $('body').append('<div class="fixed-buttons"><a href="'+instagramLink+'" target="blank">instagram</a><a href="'+mailLink+'"">email</a></div>');
@@ -14,17 +22,67 @@ $(function() {
     }
   })
 
+
+  //
   // HEADER PARALLAX
+  //
   var defaultYposition = -30;
-  var visualMain = $('.section-visual.main');
   visualMain.css('backgroundPosition', 'center '+ calculateYPosition(0) +'px');
+  /*
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     visualMain.css('backgroundPosition', 'center '+ calculateYPosition(scroll) +'px');
   })
+  */
   function calculateYPosition(scrollTop){
     return (scrollTop/3)+defaultYposition;
   }
+
+
+  //
+  // CALCULATE HEADER
+  //
+  visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
+  visualMain.css('height', calculateHeaderHeight());
+  $(window).resize(function(){
+    visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
+    visualMain.css('height', calculateHeaderHeight());
+  })
+  function calculateHeaderBackgroundWidth(){
+    var defaultBackgroundWidthValue = 960;
+    // var screenWidth = window.innerWidth * window.devicePixelRatio;
+    var screenWidth = window.innerWidth;
+    if (screenWidth < 600){
+      var resizeRatio = screenWidth/600;
+      return defaultBackgroundWidthValue*resizeRatio+'px';
+    }
+    return defaultBackgroundWidthValue+'px';
+  }
+  function calculateHeaderHeight(){
+    // var screenWidth = window.innerWidth * window.devicePixelRatio;
+    var screenWidth = window.innerWidth;
+    var defaultHeightValue = 210;
+    if (screenWidth < 600){
+      var resizeRatio = screenWidth/600;
+      return defaultHeightValue*resizeRatio+'px';
+    }
+    return defaultHeightValue+'px';
+  }
+
+
+  //
+  // CALCULATE HEADER INDENT
+  //
+  sectionPaintings.css('paddingTop', calculateHeaderIndent());
+  $(window).resize(function(){
+    sectionPaintings.css('paddingTop', calculateHeaderIndent());
+  })
+  function calculateHeaderIndent(){
+    return sectionTop.height()+'px';
+  }
+
+
+
 
 
   // MAIN PAGE HEADER SIZE
@@ -200,9 +258,12 @@ $(function() {
 
     // RETURN BACK MOBILE
     var sectionPaintings = $('#section-paintings');
-
-
   }
+
+
+
+
+
 
 
 });

@@ -27,7 +27,7 @@ body {
   color: @black-color;
   width: 100%;
   overflow-x: hidden;
-  font-weight: 300;
+  font-weight: 400;
 }
 h1, h2, h3, h4, h5, ul {
   font-weight: 300;
@@ -271,9 +271,8 @@ ul {
     display: block;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 600;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 400;
     color: @black-color;
     width: 300px;
     padding-right: 0;
@@ -295,8 +294,8 @@ ul {
   &.main{
     background: #efefef url(../img/header/main-desktop.jpg);
     // background-position: center 0px; // watch HEADER PARALLAX in script.js
-    background-size: 960px auto;
-    height: 210px;
+    // background-size: 960px auto; // watch CALCULATE HEADER in script.js
+    // height: 210px; // watch CALCULATE HEADER in script.js
     overflow: hidden;
     position: relative;
 
@@ -314,7 +313,7 @@ ul {
 
   .visual-title {
     color: @white-color;
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
     padding: 75px 0;
     .header {
       font-size: 2.7rem;
@@ -360,9 +359,7 @@ ul {
   max-width: 1100px;
   margin: 0 -5px;
   &.section-paintings-style-1 {
-    // background: #fbfbfb;
     max-width: 960px;
-    padding-top: 80px;
     padding-bottom: 10px;
   }
   .item {
@@ -705,8 +702,7 @@ ul {
       //- width: 49%;
       padding: 0 10px;
       .text-0, .price {
-        font-size: .65rem;
-        line-height: .9rem;
+        font-size: .9rem;
       }
     }
   }
