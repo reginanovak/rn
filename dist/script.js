@@ -14,6 +14,19 @@ $(function() {
     }
   })
 
+  // HEADER PARALLAX
+  var defaultYposition = -30;
+  var visualMain = $('.section-visual.main');
+  visualMain.css('backgroundPosition', 'center '+ calculateYPosition(0) +'px');
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    visualMain.css('backgroundPosition', 'center '+ calculateYPosition(scroll) +'px');
+  })
+  function calculateYPosition(scrollTop){
+    return (scrollTop/3)+defaultYposition;
+  }
+
+
   // MAIN PAGE HEADER SIZE
   /*
   function setHeaderHeight(){

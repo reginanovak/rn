@@ -4,11 +4,12 @@
 @white-color: #fff;
 @gray-color: #f1f1f1;
 @black-color: #4e4e4e;
-@sold-color: rgba(60, 141, 246, .9);
-@sale-color: rgba(255, 255, 255, .9);
-@pct30-color: rgba(48, 198, 233, .9);
+@sold-color: @white-color;
+@sold-text-color: @black-color;
+@sale-color: @black-color;
+@sale-text-color: @white-color;
 @button-color: #489aff;
-@price-color: #909090;
+@price-color: @black-color;
 
 // IMAGE: 4x3 ratio
 
@@ -19,7 +20,7 @@
 
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -59,7 +60,7 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=button], input[type=submit]{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   border: none;
   background-color: @button-color;
   color: @white-color;
@@ -71,7 +72,7 @@ input[type=button], input[type=submit]{
 .btn {
   text-decoration: none;
   cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   border: none;
   background-color: @gray-color;
   color: @white-color;
@@ -81,7 +82,7 @@ input[type=button], input[type=submit]{
   font-size: .9rem;
   display: inline-block;
   padding: 20px;
-  color: #4e4e4e;
+  color: @black-color;
   transition: background-color .8s;
   &:hover {
     background-color: darken(@gray-color, 10%);
@@ -92,7 +93,7 @@ input[type=button], input[type=submit]{
 }
 .sold-out {
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   border: none;
   color: @white-color;
   line-height: 1rem;
@@ -101,7 +102,7 @@ input[type=button], input[type=submit]{
   font-size: .9rem;
   display: inline-block;
   padding: 20px;
-  color: #4e4e4e;
+  color: @black-color;
   transition: background-color .8s;
 }
 ul {
@@ -150,8 +151,11 @@ ul {
   text-align: center;
 }
 .text-0 {
-  font-size: .98rem;
+  font-size: 1.28rem;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  margin-bottom: 8px;
 }
 .text-1 {
   text-transform: uppercase;
@@ -273,6 +277,8 @@ ul {
     color: @black-color;
     width: 300px;
     padding-right: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
     .surname {
       margin-left: .39rem;
     }
@@ -287,12 +293,13 @@ ul {
   background-repeat: no-repeat;
   background-position: center -375px;
   &.main{
-    background-image: url(../img/header/main-desktop.jpg);
-    background-position: center -267px;
+    background: #efefef url(../img/header/main-desktop.jpg);
+    // background-position: center 0px; // watch HEADER PARALLAX in script.js
     background-size: 960px auto;
     height: 210px;
     overflow: hidden;
     position: relative;
+
   }
   &.inner {
     background-size: 1610px auto;
@@ -355,7 +362,7 @@ ul {
   &.section-paintings-style-1 {
     // background: #fbfbfb;
     max-width: 960px;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 10px;
   }
   .item {
@@ -366,7 +373,7 @@ ul {
     // display: inline-block;
     display: inline-block;
     // margin: 0 auto 40px;
-    margin: 0 auto 40px -3px;
+    margin: 0 auto 50px -3px;
     vertical-align: top;
     cursor: pointer;
     box-sizing: border-box;
@@ -389,41 +396,31 @@ ul {
 }
 .label-container {
   position: relative;
-  margin: 0 auto 10px;
+  margin: 0 auto 25px;
   .label {
     position: absolute;
-    left: 0;
-    top: 0;
-    color: @white-color;
-    width: 85px;
-    height: 85px;
+    left: 10px;
+    top: 10px;
+    color: @black-color;
+    width: 62px;
+    height: 62px;
+    line-height: 61px;
     box-sizing: border-box;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: .04rem;
     &.sale {
       background-color: @sale-color;
-      color: @black-color;
-      letter-spacing: .04rem;
-      line-height: 84px;
-      font-weight: 400;
+      color: @sale-text-color;
       &:after {
         content: 'SALE';
       }
     }
     &.sold {
       background-color: @sold-color;
-      letter-spacing: .04rem;
-      line-height: 84px;
-      font-weight: 400;
+      color: @sold-text-color;
       &:after {
         content: 'SOLD';
-      }
-    }
-    &.pct30 {
-      background-color: @pct30-color;
-      letter-spacing: .04rem;
-      line-height: 65px;
-      &:after {
-        content: '30%';
       }
     }
   }
@@ -663,7 +660,7 @@ ul {
   overflow: hidden;
   width: 100%;
   height: 45px;
-  background: #efefef;
+  background: @white-color;
   left: 0;
   bottom: 0;
   text-transform: uppercase;
@@ -674,7 +671,7 @@ ul {
     text-align: center;
     line-height: 45px;
     text-decoration: none;
-    color: #4e4e4e;
+    color: @black-color;
   }
 }
 
@@ -685,7 +682,8 @@ ul {
     padding-right: 0 !important;
     text-align: center;
     width: 100%;
-    padding: 15px 0 !important
+    padding: 15px 0 !important;
+    white-space: nowrap;
   }
   .section-connect .connect-button {
     width: 30px;
@@ -738,14 +736,6 @@ ul {
     text-transform: uppercase;
     font-size: .7rem;
   }
-  /*
-  .label-container .label {
-    width: 65px !important;
-    height: 65px !important;
-    line-height: 45px !important;
-    font-size: .8rem !important;
-  }
-  */
 
   .left-edge-padding {
     margin-left: 16px !important;
