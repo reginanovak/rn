@@ -1,5 +1,4 @@
 #global-page {
-  max-width: 960px;
   margin: 0 auto;
 }
 body {
@@ -59,8 +58,8 @@ input[type=submit] {
   color: #fff;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: .04rem;
-  font-size: .8rem;
+  letter-spacing: 0.04rem;
+  font-size: 0.8rem;
 }
 .btn {
   text-decoration: none;
@@ -71,8 +70,8 @@ input[type=submit] {
   color: #fff;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: .07rem;
-  font-size: .9rem;
+  letter-spacing: 0.07rem;
+  font-size: 0.9rem;
   display: inline-block;
   padding: 20px;
   color: #4e4e4e;
@@ -91,8 +90,8 @@ input[type=submit] {
   color: #fff;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: .07rem;
-  font-size: .9rem;
+  letter-spacing: 0.07rem;
+  font-size: 0.9rem;
   display: inline-block;
   padding: 20px;
   color: #4e4e4e;
@@ -114,7 +113,7 @@ ul {
   display: none;
 }
 .disabled {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: none;
 }
 .strikethrough {
@@ -147,17 +146,17 @@ ul {
   font-size: 1.28rem;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   margin-bottom: 8px;
 }
 .text-1 {
   text-transform: uppercase;
-  letter-spacing: .04rem;
-  font-size: .8rem;
+  letter-spacing: 0.04rem;
+  font-size: 0.8rem;
 }
 .text-2 {
   text-transform: uppercase;
-  letter-spacing: .24rem;
+  letter-spacing: 0.24rem;
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -191,10 +190,10 @@ ul {
   text-transform: capitalize;
 }
 .opacity-3 {
-  opacity: .3;
+  opacity: 0.3;
 }
 .opacity-5 {
-  opacity: .5;
+  opacity: 0.5;
 }
 .mr0 {
   margin-right: 0px !important;
@@ -269,19 +268,34 @@ ul {
   margin-bottom: 8px;
 }
 .section-top .logo .surname {
-  margin-left: .39rem;
+  margin-left: 0.39rem;
 }
 .section-top .logo .art {
   color: #36b6e7;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 .section-visual {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center -375px;
 }
+.section-visual .fixed-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+}
+.section-visual .fixed-logo img {
+  width: 414px;
+  padding-top: 15px;
+}
 .section-visual.main {
-  background: #efefef url(../img/header/main-desktop.jpg);
+  background: #efefef url(../img/header/m.jpg);
+  background-size: 100% auto !important;
+  height: 380px;
   overflow: hidden;
   position: relative;
 }
@@ -297,7 +311,7 @@ ul {
 }
 .section-visual .visual-title {
   color: #fff;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   padding: 75px 0;
 }
 .section-visual .visual-title .header {
@@ -337,15 +351,15 @@ ul {
 }
 .section-paintings {
   padding-left: 1.6%;
-  max-width: 1100px;
-  margin: 0 -5px;
+  max-width: 960px;
+  margin: 0 auto -5px;
 }
 .section-paintings.section-paintings-style-1 {
   max-width: 960px;
   padding-bottom: 10px;
 }
 .section-paintings .item {
-  width: 90%;
+  width: 49%;
   text-align: center;
   display: inline-block;
   margin: 0 auto 50px -3px;
@@ -380,7 +394,7 @@ ul {
   box-sizing: border-box;
   text-align: center;
   font-weight: 700;
-  letter-spacing: .04rem;
+  letter-spacing: 0.04rem;
 }
 .label-container .label.sale {
   background-color: #4e4e4e;
@@ -457,7 +471,7 @@ ul {
   width: 100%;
 }
 #order-page .slider-container .slider-preview li.active {
-  opacity: .5;
+  opacity: 0.5;
 }
 #order-page .slider-container .slider-preview li .overlap {
   position: absolute;
@@ -497,7 +511,7 @@ ul {
   overflow: hidden;
 }
 #order-page .order-summary .order-item.fixed-option {
-  opacity: .7;
+  opacity: 0.7;
   pointer-events: none;
 }
 #order-page .order-summary .order-item img {
@@ -511,7 +525,7 @@ ul {
 }
 #order-page .order-summary .order-item .price-field .checkbox-frame {
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 #order-page .order-summary .order-item .price-field .checkbox-frame.active {
   opacity: 1;
@@ -538,7 +552,7 @@ ul {
   top: 2px;
 }
 #order-page .order-summary .text-info .checkbox-frame .checkbox img {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   opacity: 0;
   width: 17px;
   position: absolute;
@@ -546,7 +560,7 @@ ul {
   top: -3px;
 }
 #order-page .order-summary .text-info .checkbox-frame .checkbox img.opacity35 {
-  opacity: .35 !important;
+  opacity: 0.35 !important;
 }
 #order-page .order-summary .text-info .checkbox-frame.active .checkbox img {
   opacity: 1;
@@ -570,7 +584,7 @@ ul {
   vertical-align: middle;
   position: relative;
   top: -4px;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 .order-wrapper {
   position: relative;
@@ -595,23 +609,23 @@ ul {
   vertical-align: middle;
   cursor: pointer;
   margin: 0 2px;
-  transition: all .5s;
+  transition: all 0.5s;
   border: 1px solid;
   width: 9px;
   height: 9px;
   background-color: transparent;
-  opacity: .5;
+  opacity: 0.5;
 }
 .order-wrapper .pager .dot.active span {
   cursor: default;
-  opacity: .3;
+  opacity: 0.3;
   border: 4px solid;
   width: 10px;
   height: 10px;
   background-color: #4e4e4e;
 }
 .order-wrapper .pager .dot:not(.active):hover span {
-  opacity: .8;
+  opacity: 0.8;
 }
 .section-mobile-notification {
   display: none;
@@ -667,7 +681,7 @@ ul {
   }
   .section-paintings .item .text-0,
   .section-paintings .item .price {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   img {
     width: 100%;
@@ -677,7 +691,7 @@ ul {
     width: 100%;
   }
   #order-page .order-summary .order-item {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   #order-page .order-summary .order-item .text-info {
     margin-right: 45%;
@@ -691,7 +705,7 @@ ul {
     text-align: center;
     margin: -25px 25px 18px;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .left-edge-padding {
     margin-left: 16px !important;
@@ -706,11 +720,11 @@ ul {
   }
   .label-container .label.sale:after {
     content: 'SALE';
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .label-container .label.sold:after {
     content: 'SOLD';
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 400px) {

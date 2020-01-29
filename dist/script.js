@@ -26,11 +26,11 @@ $(function() {
   //
   // HEADER PARALLAX
   //
-  var defaultYposition = -30;
-  visualMain.css('backgroundPosition', 'center '+ calculateYPosition(0) +'px');
+  var defaultYposition = 0;
+  // visualMain.css('backgroundPosition', 'center '+ calculateYPosition(350) +'px');
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    visualMain.css('backgroundPosition', 'center '+ calculateYPosition(scroll) +'px');
+    // visualMain.css('backgroundPosition', 'center '+ calculateYPosition(scroll) +'px');
   })
   function calculateYPosition(scrollTop){
     return (scrollTop/3)+defaultYposition;
@@ -40,11 +40,11 @@ $(function() {
   //
   // CALCULATE HEADER
   //
-  visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
-  visualMain.css('height', calculateHeaderHeight());
+  // visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
+  // visualMain.css('height', calculateHeaderHeight());
   $(window).resize(function(){
-    visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
-    visualMain.css('height', calculateHeaderHeight());
+    // visualMain.css('backgroundSize', calculateHeaderBackgroundWidth() +' auto');
+    // visualMain.css('height', calculateHeaderHeight());
   })
   function calculateHeaderBackgroundWidth(){
     var defaultBackgroundWidthValue = 960;

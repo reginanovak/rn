@@ -14,7 +14,6 @@
 // IMAGE: 4x3 ratio
 
 #global-page {
-  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -291,8 +290,23 @@ ul {
   background-color: @white-color;
   background-repeat: no-repeat;
   background-position: center -375px;
+  .fixed-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    img{
+      width: 414px;
+      padding-top: 15px;
+    }
+  }
   &.main{
-    background: #efefef url(../img/header/main-desktop.jpg);
+    background: #efefef url(../img/header/m.jpg);
+    background-size: 100% auto !important;
+    height: 380px;
     // background-position: center 0px; // watch HEADER PARALLAX in script.js
     // background-size: 960px auto; // watch CALCULATE HEADER in script.js
     // height: 210px; // watch CALCULATE HEADER in script.js
@@ -356,16 +370,16 @@ ul {
 }
 .section-paintings {
   padding-left: 1.6%;
-  max-width: 1100px;
-  margin: 0 -5px;
+  max-width: 960px;
+  margin: 0 auto -5px;
   &.section-paintings-style-1 {
     max-width: 960px;
     padding-bottom: 10px;
   }
   .item {
     // width: 32.5%;
-    // width: 49%;
-    width: 90%;
+    width: 49%;
+    // width: 90%;
     text-align: center;
     // display: inline-block;
     display: inline-block;
@@ -671,6 +685,8 @@ ul {
     color: @black-color;
   }
 }
+
+
 
 @media (max-width:767px) {
   .section-top .logo {
